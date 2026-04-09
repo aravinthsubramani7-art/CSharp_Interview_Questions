@@ -1,0 +1,43 @@
+Delegate:
+English Meaning:
+A delegate is a person chosen to represent a group of people in a meeting or conference and speak or make decisions for them.
+Example:
+In a company meeting, one employee may go and speak on behalf of the whole team. That person is the delegate.
+Tamil (தமிழில்):
+Delegate என்றால் ஒரு குழுவின் சார்பாக பேச அல்லது முடிவு எடுக்க அனுப்பப்படும் நபர்.
+எளிமையாக:
+ஒரு குழுவுக்குப் பதிலாக கூட்டம் அல்லது மாநாட்டில் கலந்து கொண்டு அவர்களுக்குப் பதிலாக பேசும் நபர்.
+Example (உதாரணம்):
+ஒரு நிறுவனத்தில் முழு குழுவுக்குப் பதிலாக ஒரு ஊழியர் கூட்டத்திற்கு அனுப்பப்படுகிறார்.
+அவர் தான் Delegate (பிரதிநிதி).
+
+What is Delegate
+•	It is a type-safe function pointer.
+•	A delegate holds the reference of a method and then calls the method for execution
+•	In c#, we can call the method in 2 ways
+  1.	By using the instance of the class, if it is a non-static method
+  2.	By using the name of the class if it is a static method
+  3.	Here additionally, using delegate we can call the method
+•	To call a method by using a delegate we have 3 steps
+1.	Define a Delegate
+<modifier> delegate void | type <name>(<parameter>);
+Example Method signature- public void AddNums(int a, int b)
+Example Delegate definition(signature) - public delegate void AddDelegate(int a, int b);
+Note – method name and delegate name will not be same
+2 important points to remember while defining a delegate
+1. The return type of the delegate should exactly match with the return type of the method
+2. The parameter type of the delegate should exactly be same type of parameter of the method
+Example Method Signature - public static string SayHello(string name)
+Example delegate definition(signature) - public delegate string SayDelegate(string name);
+Remember a delegate is a type like class, structure, interface all these are user-defined types, delegate also user-defined type
+The main difference between the structure and class is Class is a reference type meanwhile structure is a value type, same way a delegate is also a reference type
+In c#, we generally define type(class, interface) under namespaces
+Why, types are going to be defined under namespaces and namespaces is a logical container of types 
+2.	Instantiating a delegate
+•	In the process of instantiation, we will create a instance of a delegate, why, delegate is a reference type and at the time of instantiating a delegate you require to pass the method as a parameter to the delegate
+•	Instantiating is a process of creating a instance of the delegate and in the process, you require to pass the method as a parameter to the delegate constructor
+•	AddDelegate ad = new AddDelegate(p.AddNums);
+SayDelegate sd = new SayDelegate(Program.sayHello);
+
+3.	Call the Delegate
+•	Call the delegate by passing required parameter values, so that internally the method which is bound with the delegate gets executed.
