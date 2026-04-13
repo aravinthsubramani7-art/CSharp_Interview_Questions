@@ -1,0 +1,9 @@
+Multicast Delegates:
+•	A multicast delegate in C# is a delegate that can hold references to multiple methods and invoke them one after another in a single call.
+•	A multicast delegate is a delegate that points to more than one method and executes all of them in sequence when invoked.
+•	For example, in a class if multiple methods with same signature we can call all methods by using same delegate
+•	Suppose the methods with same return type first result will be override by the next result and you will get the last result only. rather if it is a void returning no problem.
+•	It is always better when you are using multicast delegate the methods should be non value returning
+•	Actually, this is the known defect/ issue/ behaviour
+•	To overcome the issue we can use the following way
+1. GetInvocationList()
