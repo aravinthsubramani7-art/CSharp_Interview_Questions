@@ -1,0 +1,5 @@
+Anonymous Methods:
+•	Anonymous method is also related with delegates only, without binding the method name to the delegate, you can bind the code block of the delegate (means an unnamed code block to the delegate)
+•	Advantage: lesser typing work
+•	Generally the anonymous methods are not suggested, when the code volume is small(up to 10 lines of code), without witing the separate method we can just use a unnamed method and bind directly with the delegate
+•	An anonymous method in C# is a method without a name, defined using the delegate keyword, and used to provide inline implementation of a delegate. It helps reduce code by avoiding separate method definitions. In modern C#.
