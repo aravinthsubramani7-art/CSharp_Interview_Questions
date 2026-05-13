@@ -1,0 +1,23 @@
+Extension Methods:
+•	This is the new feature that has been added in C# 3.0
+•	Suppose there are 10 methods in class, I want to add 5 more methods in that class
+•	But what if you don’t have the source code of the class(for example you want to add the method under the string class, but you can’t because you don’t have the source code of the string class) 
+•	And what if you don’t have permission to do a modification on the class(for example the class and methods are written long back ago and testing team confirmed all features are working fine and code are perfect) now if you have permission and if you add a methods then the entire code should be sent for testing again, cause time waste for developers and testers
+•	To resolve this problem, we bring the feature called inheritance
+•	In inheritance we will create a child class and now we don’t need a source code and permission
+•	Inheritance is one way by using we can extend the functionalities of a class, but unfortunately few problems with this inheritance
+
+Problems
+1.	We can’t apply inheritance on sealed class (string, int, Boolean and other built-in classes)
+2.	We can’t apply inheritance on structure
+3.	We are extending the functionality (adding methods in child class by inheritance), we can call all parent and child class methods by using the child class instance but we can’t call all the parent and child class method by using the parent class instance – this is one of the flaw of the inheritance
+•	To overcome this above-mentioned problem, Microsoft introduced a concept called Extension Methods
+•	It is a mechanism of adding new methods into an existing class or structure without modifying the source code and in this process doesn’t require any permission and doesn’t require any re-compilation
+•	How to proceed with adding extra methods in existing class by using extension Method is to create new class first and that should be static
+•	If a class is static then members(properties/methods) also should be static.
+•	Extension Methods are defined as static but once they are bound with any class/ structure they turn into non-static.
+•	If an extension method defined with the same name and same and signature of an existing method in the class then extension method will not be called. The preference always go to original method only. So don’t define a method with same name and signature of the original class
+
+•	Int is a predefined datatype and int is comes under structure type rather string is a class
+type int / string in vs or vs code, right click  go to definition
+ 
