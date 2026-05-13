@@ -1,0 +1,15 @@
+/workspaces/CSharp_Interview_Questions/Extension_Methods/bin/Debug/net10.0/Extension_Methods
+/workspaces/CSharp_Interview_Questions/Extension_Methods/bin/Debug/net10.0/Extension_Methods.deps.json
+/workspaces/CSharp_Interview_Questions/Extension_Methods/bin/Debug/net10.0/Extension_Methods.runtimeconfig.json
+/workspaces/CSharp_Interview_Questions/Extension_Methods/bin/Debug/net10.0/Extension_Methods.dll
+/workspaces/CSharp_Interview_Questions/Extension_Methods/bin/Debug/net10.0/Extension_Methods.pdb
+/workspaces/CSharp_Interview_Questions/Extension_Methods/obj/Debug/net10.0/Extension_Methods.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/CSharp_Interview_Questions/Extension_Methods/obj/Debug/net10.0/Extension_Methods.AssemblyInfoInputs.cache
+/workspaces/CSharp_Interview_Questions/Extension_Methods/obj/Debug/net10.0/Extension_Methods.AssemblyInfo.cs
+/workspaces/CSharp_Interview_Questions/Extension_Methods/obj/Debug/net10.0/Extension_Methods.csproj.CoreCompileInputs.cache
+/workspaces/CSharp_Interview_Questions/Extension_Methods/obj/Debug/net10.0/Extension_Methods.sourcelink.json
+/workspaces/CSharp_Interview_Questions/Extension_Methods/obj/Debug/net10.0/Extension_Methods.dll
+/workspaces/CSharp_Interview_Questions/Extension_Methods/obj/Debug/net10.0/refint/Extension_Methods.dll
+/workspaces/CSharp_Interview_Questions/Extension_Methods/obj/Debug/net10.0/Extension_Methods.pdb
+/workspaces/CSharp_Interview_Questions/Extension_Methods/obj/Debug/net10.0/Extension_Methods.genruntimeconfig.cache
+/workspaces/CSharp_Interview_Questions/Extension_Methods/obj/Debug/net10.0/ref/Extension_Methods.dll
