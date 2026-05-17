@@ -1,0 +1,54 @@
+Content Negotiation:
+•	Content Negotiation is the process where the client and server decide the Web API response format (JSON/XML/etc.) using the Accept header.
+•	By default, Web API send the response in JSON Format
+•	Client requests response format → Server sends data in that format.
+How Content Negotiation Works:
+•	Client → Accept Header → Server → Response Format – This is the flow
+•	Request  Accept: application/json
+Response will be JSON
+{
+  "id": 1,
+  "name": "Aravinth"
+}
+•	Request  Accept: application/xml
+Response
+<Employee>
+   <Id>1</Id>
+   <Name>Aravinth</Name>
+</Employee>
+•	To create web API project use the following command
+dotnet new webapi -n ProjectName
+•	If you want Controllers, service or repo, add folder and create a cs file under the respective folder
+•	If the swagger not available follow the below steps
+•	Run the command   dotnet add package Swashbuckle.AspNetCore
+•	Update Program.cs to add the follows
+1.	Remove/ Comment Out the default OpenAPI Service under WebApplication.CreateBuilder
+2.	Add builder.services.AddEndpointsApiExplorer();
+3.	Add Swagger Service  builder.Services.AddSwaggerGen();
+4.	Remove / Comment Out app.MapOpenApi();
+5.	Instead add app.UseSwagger(); app.UseSwaggerUI();
+6.	Add underneath of WebApplication.CreateBuilder 
+builder.Services.AddControllers();  we are proceeding with controller code instead of default open api code in Program.cs file
+If you missed to add the AddControllers(), you will encounter the following issue No operations defined in spec!
+ <image availble in the Interview Questions word file>
+7.	Run the Web API using dotnet run command and copy paste the URL in browser with /swagger
+8.	You are proceeding with controller, so you have to add app.MapControllers(); above the app.Run();
+otherwise you will see the Not Fond error
+ <image availble in the Interview Questions word file>
+•	Now the result comes in JSOM Format
+•	See if you use IActionResult, you won’t see the Medio type dropdown in the swagger
+ <image availble in the Interview Questions word file>
+How to fix: try to use ActionResult as used in Image
+ <image availble in the Interview Questions word file>
+•	To get the XML Format Response replace the builder.Services.AddControllers();
+with builder.Services.AddControllers().AddXmlSerializerFormatters();
+ <image availble in the Interview Questions word file>
+What is content negotiation?
+Mechanism used by Web API to return response in client requested format like JSON or XML.
+Which header is used?
+Accept
+What happens if requested format is not supported?
+406 Not Acceptable
+when:
+options.ReturnHttpNotAcceptable = true; is enabled
+if it is not enabled it will return default json response for th rest of the requested format(like HTML, plain text, etc)
