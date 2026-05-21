@@ -1,0 +1,15 @@
+/workspaces/CSharp_Interview_Questions/Collections/ArrayList/bin/Debug/net10.0/ArrayList
+/workspaces/CSharp_Interview_Questions/Collections/ArrayList/bin/Debug/net10.0/ArrayList.deps.json
+/workspaces/CSharp_Interview_Questions/Collections/ArrayList/bin/Debug/net10.0/ArrayList.runtimeconfig.json
+/workspaces/CSharp_Interview_Questions/Collections/ArrayList/bin/Debug/net10.0/ArrayList.dll
+/workspaces/CSharp_Interview_Questions/Collections/ArrayList/bin/Debug/net10.0/ArrayList.pdb
+/workspaces/CSharp_Interview_Questions/Collections/ArrayList/obj/Debug/net10.0/ArrayList.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/CSharp_Interview_Questions/Collections/ArrayList/obj/Debug/net10.0/ArrayList.AssemblyInfoInputs.cache
+/workspaces/CSharp_Interview_Questions/Collections/ArrayList/obj/Debug/net10.0/ArrayList.AssemblyInfo.cs
+/workspaces/CSharp_Interview_Questions/Collections/ArrayList/obj/Debug/net10.0/ArrayList.csproj.CoreCompileInputs.cache
+/workspaces/CSharp_Interview_Questions/Collections/ArrayList/obj/Debug/net10.0/ArrayList.sourcelink.json
+/workspaces/CSharp_Interview_Questions/Collections/ArrayList/obj/Debug/net10.0/ArrayList.dll
+/workspaces/CSharp_Interview_Questions/Collections/ArrayList/obj/Debug/net10.0/refint/ArrayList.dll
+/workspaces/CSharp_Interview_Questions/Collections/ArrayList/obj/Debug/net10.0/ArrayList.pdb
+/workspaces/CSharp_Interview_Questions/Collections/ArrayList/obj/Debug/net10.0/ArrayList.genruntimeconfig.cache
+/workspaces/CSharp_Interview_Questions/Collections/ArrayList/obj/Debug/net10.0/ref/ArrayList.dll
