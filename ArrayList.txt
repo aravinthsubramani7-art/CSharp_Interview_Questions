@@ -1,0 +1,21 @@
+Collections in C#:
+•	Collection is nothing but Dynamic Array
+•	We have some drawbacks in array, to overcome those they introduced a Dynamic Array called Collections
+•	Int[] arr = new int[10];
+the size of the array never be increased, but if you want to increase the size of the array
+1. you can create a new array and copy paste the values into the new array
+2. otherwise you can use the Resize in-built Method of Array Class, even though internally it will destroy the old array and create a new array with specified size
+ <image>
+it requires 2 parameters, one is whose the size has to be increased(remember it is an output parameter we should pass it as ref), second one is size 
+Array.Resize(ref arr, 15);
+•	You cannot insert or remove the values from the middle of the array
+•	But Collections are Auto-Resizing, and possible to add or remove values from the middle 
+•	Microsoft introduced collections in dotnet 1.0 version, but there is small difference what we have in the current market and that came in the 1.0
+•	Dotnet 1.0 – Non Generic Collections
+•	Non Generic Collections: Stack, Queue, LinkedList, SortedList, ArrayList, HasTable all these are classes(collection classes), comes under the System.Collections namespace and these all are non generic collections
+•	Difference between Array and ArrayList
+1. Fixed Length						Variable Length
+2. Not Possible to insert item in the middle		possible to insert item in the middle
+3. Not Possible to delete item from the middle	possible to delete item from the middle
+<image>
+ 
