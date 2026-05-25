@@ -1,0 +1,5 @@
+•	Array and ArrayList – Key/Value Combination, here keys are predefined starts with 0 and ends with length -1(we can never change the particular key value)
+•	To overcome the problem and I want the key should be some meaningful name and I want to store values in the respective key names, Microsoft brings Hashtable
+•	Array / ArrayList – keys are pre defined
+Hashtable – keys are user-defined
+•	Hashtable is faster than Array List
