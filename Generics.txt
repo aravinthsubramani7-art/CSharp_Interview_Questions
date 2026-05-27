@@ -1,0 +1,106 @@
+•	We have drawback with non generic collections, that is they are not type safe
+•	Take the previous example code of ArrayList & Hashtable
+ <image>
+You can store any type of value into ArrayList such as string, int, float, Boolean, etc
+same for Hashtable as well
+•	What is problem with allowing any type of value we can store in ArrayList / Hashtable
+for example in an application I want to store ‘n’ no of integer values, if you create a non-generic collection, it will accept any type of data, so the moto of the application will break.
+•	Array  Type Safe but Fixed Length
+Collection  Auto Resizing but not Type Safe
+•	so, I need a combination of both(it should be type safe & Auto resizing), to achieve this Microsoft introduce a concept called Generic Collections in C# 2.0.
+•	Generic Collections  Type Safe & Auto Resizing
+•	In Generic Collection, the ArrayList is named as List<T>, here T  Type of value
+List<int> li = new List<int>();
+T  not only a primitive type, we can also specify user defined types like Class
+
+<image>
+
+public class Customer
+{
+Public int cusId {get; set;}
+Public int cusId {get; set;}
+Public int cusId {get; set;}
+}
+List<Customer> customers = new List<Customer>();
+•	Generic Collections are strongly typed
+•	Collections are loosely typed
+
+--------------------------------------------------------------------------------------------------------------------------------
+Generics:
+•	T – represents Type of the value
+•	If we are going with Generics we don’t require to perform boxing & unboxing operation
+namespace GenericCollections
+{
+    public class Generics2
+    {
+
+        public void Add<T>(T a, T b)
+        {
+
+            Console.WriteLine(a + b);
+        }
+        public void Subtract<T>(T a, T b)
+        {
+            Console.WriteLine(a - b);
+        }
+        public void Multiply<T>(T a, T b)
+        {
+            Console.WriteLine(a * b);
+        }
+        public void Divide<T>(T a, T b)
+        {
+            Console.WriteLine(a / b);
+        }
+        public static void Main(string[] args)
+        {
+            
+        }
+    }
+}
+•	If you build this project you will get an error
+ 
+
+•	To fix this issue do the following
+ 
+
+•	Dynamic is a concept introduced in c# 4.0, which allows to declare a variable by using the dynamic keyword and in the above code the data type of the variable is identified at the runtime
+•	Var keyword is also similar to dynamic, where the var identify the type of the variable at the compilation time, dynamic  at runtime
+•	By building the below code you will get an error
+public class Generics2<T>
+{
+        public void Add(T a, T b)
+        {
+            dynamic d1 = a;
+            dynamic d2 = b;
+            Console.WriteLine(d1 + d2);
+        }
+        public void Subtract(T a, T b)
+        {
+            dynamic d1 = a;
+            dynamic d2 = b;
+            Console.WriteLine(d1 - d2);
+        }
+        public void Multiply(T a, T b)
+        {
+            dynamic d1 = a;
+            dynamic d2 = b;
+            Console.WriteLine(d1 * d2);
+        }
+        public void Divide(T a, T b)
+        {
+            dynamic d1 = a;
+            dynamic d2 = b;
+            Console.WriteLine(d1 / d2);
+        }
+
+        public static void Main(string[] args)
+        {
+            Generics2<int> obj = new Generics2<int>();
+            obj.Add(10, 20);
+            obj.Subtract(20, 10);
+            obj.Multiply(10, 20);
+            obj.Divide(20, 10);
+            Console.ReadLine();
+        }
+    }
+•	You need to bring the main method in the separate class and run it 
