@@ -1,3 +1,7 @@
 Dictionary:
 •	As same as the ArrayList is changed to List in Generic Collection, Hashtable is changed to Dictionary
 •	Dictionary<TKey, TValue>
+
+Generic Collections with user defined types:
+•	In case of generic collection, the type of the values we want to store under the collections need not be pre-defined types like int, float, char, bool, etc., but it can also be some user-defined type also
+
