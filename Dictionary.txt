@@ -1,0 +1,3 @@
+Dictionary:
+•	As same as the ArrayList is changed to List in Generic Collection, Hashtable is changed to Dictionary
+•	Dictionary<TKey, TValue>
