@@ -1,0 +1,7 @@
+IComparable & IComparer:
+•	When you run the program with this, the second foreach will throw and exception
+ <image>
+ <image>
+•	If you try to use the Sort Method on the Generic collection of primitive types, it will work without throws any exception, but since the above image represents there we used User defined type as a type which is a complex type contain multiple values in it, so that it is struggling to sort(compiler confusing based on what property should I perform the sorting operation)
+•	To overcome the above problem we have a interface called IComparable and CompareTo method
+•	 If the source code of student is not available and the sorting should be performed based on marks then we have a solution called IComparer Interface and Compare Method
