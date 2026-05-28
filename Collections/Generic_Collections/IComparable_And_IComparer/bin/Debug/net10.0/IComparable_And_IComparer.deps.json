@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "IComparable_And_IComparer/1.0.0": {
+        "runtime": {
+          "IComparable_And_IComparer.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "IComparable_And_IComparer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
