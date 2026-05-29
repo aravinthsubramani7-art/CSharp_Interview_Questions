@@ -5,6 +5,7 @@
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <StartupObject>GenericCollection2.TestStudent</StartupObject>
   </PropertyGroup>
 
 </Project>
