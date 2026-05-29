@@ -5,3 +5,19 @@ IComparable & IComparer:
 •	If you try to use the Sort Method on the Generic collection of primitive types, it will work without throws any exception, but since the above image represents there we used User defined type as a type which is a complex type contain multiple values in it, so that it is struggling to sort(compiler confusing based on what property should I perform the sorting operation)
 •	To overcome the above problem we have a interface called IComparable and CompareTo method
 •	 If the source code of student is not available and the sorting should be performed based on marks then we have a solution called IComparer Interface and Compare Method
+•	The sort method has 4 overloads
+ <image>
+The above overload is for primitive types
+
+ <image>
+This is a delegate
+
+ <image>
+This is when we have used IComparer Interface
+
+ <image>
+This is also IComparer but from which value to which value sorting should be performed
+
+•	Comparision  delegate
+ <image>
+•	Delegate – type safe function pointers using which we can call the 	method.
