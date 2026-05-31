@@ -1,0 +1,6 @@
+IEnumerable Interface:
+•	This is the parent of all the collections.
+•	IEnumerable  ICollection IList, IDictionary
+ 
+•	Because of the GetEnumerator() Method in IEnumerator Interface only the foreach loop is working inside the collections
+•	A class inherits from form, then that class is called as form, if the class inherits from exception then that class is a exception
