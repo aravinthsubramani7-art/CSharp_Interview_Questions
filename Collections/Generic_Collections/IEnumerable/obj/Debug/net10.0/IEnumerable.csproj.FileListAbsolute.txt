@@ -1,0 +1,15 @@
+/workspaces/CSharp_Interview_Questions/Collections/Generic_Collections/IEnumerable/bin/Debug/net10.0/IEnumerable
+/workspaces/CSharp_Interview_Questions/Collections/Generic_Collections/IEnumerable/bin/Debug/net10.0/IEnumerable.deps.json
+/workspaces/CSharp_Interview_Questions/Collections/Generic_Collections/IEnumerable/bin/Debug/net10.0/IEnumerable.runtimeconfig.json
+/workspaces/CSharp_Interview_Questions/Collections/Generic_Collections/IEnumerable/bin/Debug/net10.0/IEnumerable.dll
+/workspaces/CSharp_Interview_Questions/Collections/Generic_Collections/IEnumerable/bin/Debug/net10.0/IEnumerable.pdb
+/workspaces/CSharp_Interview_Questions/Collections/Generic_Collections/IEnumerable/obj/Debug/net10.0/IEnumerable.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/CSharp_Interview_Questions/Collections/Generic_Collections/IEnumerable/obj/Debug/net10.0/IEnumerable.AssemblyInfoInputs.cache
+/workspaces/CSharp_Interview_Questions/Collections/Generic_Collections/IEnumerable/obj/Debug/net10.0/IEnumerable.AssemblyInfo.cs
+/workspaces/CSharp_Interview_Questions/Collections/Generic_Collections/IEnumerable/obj/Debug/net10.0/IEnumerable.csproj.CoreCompileInputs.cache
+/workspaces/CSharp_Interview_Questions/Collections/Generic_Collections/IEnumerable/obj/Debug/net10.0/IEnumerable.sourcelink.json
+/workspaces/CSharp_Interview_Questions/Collections/Generic_Collections/IEnumerable/obj/Debug/net10.0/IEnumerable.dll
+/workspaces/CSharp_Interview_Questions/Collections/Generic_Collections/IEnumerable/obj/Debug/net10.0/refint/IEnumerable.dll
+/workspaces/CSharp_Interview_Questions/Collections/Generic_Collections/IEnumerable/obj/Debug/net10.0/IEnumerable.pdb
+/workspaces/CSharp_Interview_Questions/Collections/Generic_Collections/IEnumerable/obj/Debug/net10.0/IEnumerable.genruntimeconfig.cache
+/workspaces/CSharp_Interview_Questions/Collections/Generic_Collections/IEnumerable/obj/Debug/net10.0/ref/IEnumerable.dll
