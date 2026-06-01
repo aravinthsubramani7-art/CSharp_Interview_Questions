@@ -1,4 +1,5 @@
-﻿// namespace CollectionProject
+﻿//IEmumerable Example Project
+// namespace CollectionProject
 // {
 //     public class Employee
 //     {
