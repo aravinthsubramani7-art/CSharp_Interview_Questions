@@ -4,3 +4,6 @@ IEnumerable Interface:
  
 •	Because of the GetEnumerator() Method in IEnumerator Interface only the foreach loop is working inside the collections
 •	A class inherits from form, then that class is called as form, if the class inherits from exception then that class is a exception
+•	Every collection class inherits from IEnumerable
+•	IEnumerable is an interface that is implemented(:) by all the collection class, because it is implements IEnumerable interface every collection class contain a method called GetEnumerator(), because of that method only we can use a foreach loop on that collection.
+
