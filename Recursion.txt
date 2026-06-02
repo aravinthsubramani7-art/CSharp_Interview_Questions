@@ -1,0 +1,6 @@
+Recursion:
+•	Recursion is a programming technique where a method calls itself.
+•	A recursive method must have
+Base Case – a condition that stops the recursion
+Recursive Case – the method calls itself with or without input
+Without a base case, a method will keep calling itself and eventually cause a StackOverflow Exception.
