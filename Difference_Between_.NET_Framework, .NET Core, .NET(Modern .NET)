@@ -1,0 +1,62 @@
+Difference Between .NET Framework, .NET, .NET Core:
+•	The name may be confusing .NET Framework, .NET Core, .NET(Modern .NET) are related, but represents different versions / generations of Microsoft Development platform
+•	.NET Framework (2002) ──────────────► Legacy Windows-only
+•	.NET Core (2016) ──────────────► Cross-platform, open-source
+•	.NET 5 (2020)
+•	.NET 6 (2021 LTS)
+•	.NET 7 (2022)
+•	.NET 8 (2023 LTS)
+•	.NET 9 (2024)
+•	.NET 10 (2025)
+•	      ▲
+•	      └── Unified platform (formerly .NET Core)
+.NET Framework:
+•	The Original Microsoft framework released in 2002
+Features:
+•	Runs only on Windows
+•	Supports ASP.NET MVC 5, Web Forms, WCF, WPF, Windows Forms
+•	Latest version of .NET Framework is 4.8.1
+.NET Core
+•	Released in 2016 as a redesign of .NET Framework
+Why Microsoft Created it:
+•	To overcome the limitation in .NET Framework such as Windows-only, Large Installation footprint, difficult to deploy independently, not ideal for containers and cloud
+Features:
+•	Cross Platform (Windows, Linux, macOS)
+•	Open Source
+•	High Performance compared to .NET Framework
+•	Container-friendly
+•	Cloud-ready
+•	ASP.NET Core 2.1, 3.1, Console Applications, Microservices, REST APIs
+•	Latest version of .NET Core is 1.0, 2.0, 3.1
+Modern .NET (.NET 5+):
+•	Microsoft renamed .NET Core into a single platform called .NET
+Features:
+•	Cross-Platform
+•	Open Source
+•	High Performance
+•	Cloud-native
+•	Supports Web, Desktop, Mobile, IoT, Microservices, APIs
+•	One Platform for all Application types
+•	ASP.NET Core Web API, Blazor, MAUI, Worker Services, Microservices, Console Apps
+•	Current popular version is .NET 8, latest is .NET 10
+Feature	.NET Framework	.NET Core	Modern .NET
+First Release	2002	2016	2020 (.NET 5)
+Platform	Windows Only	Cross-platform	Cross-platform
+Open Source	No	Yes	Yes
+Performance	Good	Better	Best
+Cloud Support	Limited	Excellent	Excellent
+Docker Support	No	Yes	Yes
+Microservices	Difficult	Excellent	Excellent
+ASP.NET	ASP.NET MVC/Web Forms	ASP.NET Core	ASP.NET Core
+Future Development	Maintenance Only	Discontinued	Active Development
+Latest Version	4.8.1	3.1	.NET 10
+•	.NET Framework uses CLR and .NET & .NET(Modern .NET) uses CoreCLR
+
+
+
+The interviewer may ask What are the difference between .Net framework & .NET Core? OR What are the advantages of .NET Core over .NET Framework?
+•	The first advantage is .NET core is Cross Platform, it means it can run on Windows, Linux, macOS rather .NET Framework only be run on Windows
+•	Second advantage of .NET Core is it is Completely Open Source, rather .NET framework is paid means company had to purchase the license to run .NET framework-based applications on their servers (for students it is free not for companies)
+•	Third one is Hosting. .NET Core can be hosted in IIS, Kestrel, Nginx rather .NET Framework is only can be hosted in IIS
+•	Another advantage of .NET Core is Built-in dependency injection which enable the application loosely coupled, Reuseable, Testable rather in .NET Framework achieving DI is complex
+•	Last Advantage is .NET Core supports multiple IDEs such as VS, Vs for Mac, VS Code rather .Net Framework only supports VS 
