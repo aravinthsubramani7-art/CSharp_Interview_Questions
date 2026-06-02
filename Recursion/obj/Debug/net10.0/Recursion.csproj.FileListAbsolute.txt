@@ -1,0 +1,15 @@
+/workspaces/CSharp_Interview_Questions/Recursion/obj/Debug/net10.0/Recursion.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/CSharp_Interview_Questions/Recursion/obj/Debug/net10.0/Recursion.AssemblyInfoInputs.cache
+/workspaces/CSharp_Interview_Questions/Recursion/obj/Debug/net10.0/Recursion.AssemblyInfo.cs
+/workspaces/CSharp_Interview_Questions/Recursion/obj/Debug/net10.0/Recursion.csproj.CoreCompileInputs.cache
+/workspaces/CSharp_Interview_Questions/Recursion/obj/Debug/net10.0/Recursion.sourcelink.json
+/workspaces/CSharp_Interview_Questions/Recursion/bin/Debug/net10.0/Recursion
+/workspaces/CSharp_Interview_Questions/Recursion/bin/Debug/net10.0/Recursion.deps.json
+/workspaces/CSharp_Interview_Questions/Recursion/bin/Debug/net10.0/Recursion.runtimeconfig.json
+/workspaces/CSharp_Interview_Questions/Recursion/bin/Debug/net10.0/Recursion.dll
+/workspaces/CSharp_Interview_Questions/Recursion/bin/Debug/net10.0/Recursion.pdb
+/workspaces/CSharp_Interview_Questions/Recursion/obj/Debug/net10.0/Recursion.dll
+/workspaces/CSharp_Interview_Questions/Recursion/obj/Debug/net10.0/refint/Recursion.dll
+/workspaces/CSharp_Interview_Questions/Recursion/obj/Debug/net10.0/Recursion.pdb
+/workspaces/CSharp_Interview_Questions/Recursion/obj/Debug/net10.0/Recursion.genruntimeconfig.cache
+/workspaces/CSharp_Interview_Questions/Recursion/obj/Debug/net10.0/ref/Recursion.dll
