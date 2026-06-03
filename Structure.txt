@@ -1,0 +1,21 @@
+Structures in C#:
+•	Class is a user-defined data type as same as Structure also a user-defined data type
+•	Actually, structure only came into existence first than a classes, if you remember the procedural languages C, in the C language we have been learnt about this structure and after that object-oriented programming languages introduced a concept called class, but first structures only came in the procedural languages which are replaced by the classes in the object-oriented languages.
+•	If you recollect yourself, structures in C language we can declare only fields under them, but the structures in C# can contain most of the things what the class contain like fields, methods, constructor, properties, indexers, operator methods, etc,.
+•	<Modifiers> Struct <Name> { Define Members here }
+•	VS - Use the Code File item template to create a structure, what is this Code File, Code File is a blank file, blank .cs file and in this you can define whatever you want, you can define classes in it you can define interfaces in it
+ 
+•	Differences Between Classes And Structures
+1.	Class is a Reference Type whereas Structure is a Value Type
+2.	Memory allocation for instances of class is performed on managed Heap memory, whereas memory allocation for instances of structure is performed on Stack.
+Reference Type memory is allocated on Heap, whereas Value Type memory is allocated on Stack
+3.	We use classes for representing an entity with larger volume of date whereas we use structures for representing smaller volumes of data
+4.	Pre-defined reference types all implemented as classes, whereas pre-defined value types are implemented as structures
+All Pre-defined data types under the libraries of our language which come under reference type category E.g. String and Object are classes
+whereas all the pre-defined data types which come under value type category, E.g Int (Int32), float (single), bool (Boolean) are structures
+5.	In case of class, the “new” keyword is mandatory for creating the instance, wheras in case of structure it is only optional
+you can create a instance of struct  MyStruct myStruct;
+but in class, it will throw an error
+6.	Fields of a class can be initialized at the time of declaration, whereas it is not possible with fields in structure
+if a structure contain any fields, then we need to initialize those fields either by explicitly calling the default constructor with the help of “new” keyword or else if we are not using “new” for creating the instance we need to explicitly assign values to the field referring it through instance and assign value
+7.	We can define any constructer under the class that is either parameter less or parameterized, and if no constructor is defined then there will be an implicit constructor which is default, whereas in case of a structure parameter less or default constructor is always implicit and cannot be defined explicitly again what we can define is only parametrized constructor
