@@ -18,4 +18,9 @@ you can create a instance of struct  MyStruct myStruct;
 but in class, it will throw an error
 6.	Fields of a class can be initialized at the time of declaration, whereas it is not possible with fields in structure
 if a structure contain any fields, then we need to initialize those fields either by explicitly calling the default constructor with the help of “new” keyword or else if we are not using “new” for creating the instance we need to explicitly assign values to the field referring it through instance and assign value
-7.	We can define any constructer under the class that is either parameter less or parameterized, and if no constructor is defined then there will be an implicit constructor which is default, whereas in case of a structure parameter less or default constructor is always implicit and cannot be defined explicitly again what we can define is only parametrized constructor
+7.[only this problem arises on lower version of C# (that is C# 9 or below)]We can define any constructer under the class that is either parameter less or parameterized, and if no constructor is defined then there will be an implicit constructor which is default, whereas in case of a structure parameter less or default constructor is always implicit and cannot be defined explicitly again what we can define is only parametrized constructor.
+Why did Microsoft originally disallow parameterless constructors in structs?
+Because structs are value types and always have an implicit default constructor that initializes all fields to their default values (0, false, null, etc.). Allowing custom parameter less constructors complicated the runtime initialization behaviour. Starting in C# 10, the language was enhanced to support them safely.
+8.	Class can be inherited by other classes, whereas structures cannot be inherited by other structures, i.e. a structure doesn’t support Inheritance.
+9.	A class can implement the interface same as that a structure also can implement an interface.
+<image>
