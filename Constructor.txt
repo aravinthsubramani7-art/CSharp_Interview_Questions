@@ -1,0 +1,28 @@
+Constructors:
+•	Object oriented programming is all about writing the code inside a class, a class is collection of various members like fields, methods, constructors, etc,
+•	It is a special method present under a class responsible for initializing the variables of that class
+•	The name of a constructor method is exactly the same name of the class in which it was present.
+•	It is a non-value returning method.
+•	Each and every class requires this constructor if we want to create the instance of that class.
+•	It is responsibility of the programmer to define a constructor under his class and if he fails to do that, on behalf of programmer an implicit constructor is defined by the Compiler
+For example
+public class Test()
+{
+	Int i;
+}
+Test test = new Test(); //valid this will run without an error even though the i is not initialized
+In backend,
+public class Test()
+{
+	Int i;
+Public void Test() //default constructor
+{
+	i = 0;
+
+}
+}
+Test test = new Test();
+•	Implicitly defined constructors are also known as default constructors, which is parameter less
+•	Implicitly defined constructor are public
+•	We can also define a constructor under the class, and if we define it, we can call it as explicit constructor, and explicit constructor can be parameter less or parameterized
+•	<modifier> name (parameter list) { Statements }
