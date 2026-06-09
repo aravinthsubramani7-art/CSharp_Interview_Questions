@@ -1,0 +1,15 @@
+/workspaces/CSharp_Interview_Questions/Constructors/bin/Debug/net10.0/Constructors
+/workspaces/CSharp_Interview_Questions/Constructors/bin/Debug/net10.0/Constructors.deps.json
+/workspaces/CSharp_Interview_Questions/Constructors/bin/Debug/net10.0/Constructors.runtimeconfig.json
+/workspaces/CSharp_Interview_Questions/Constructors/bin/Debug/net10.0/Constructors.dll
+/workspaces/CSharp_Interview_Questions/Constructors/bin/Debug/net10.0/Constructors.pdb
+/workspaces/CSharp_Interview_Questions/Constructors/obj/Debug/net10.0/Constructors.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/CSharp_Interview_Questions/Constructors/obj/Debug/net10.0/Constructors.AssemblyInfoInputs.cache
+/workspaces/CSharp_Interview_Questions/Constructors/obj/Debug/net10.0/Constructors.AssemblyInfo.cs
+/workspaces/CSharp_Interview_Questions/Constructors/obj/Debug/net10.0/Constructors.csproj.CoreCompileInputs.cache
+/workspaces/CSharp_Interview_Questions/Constructors/obj/Debug/net10.0/Constructors.sourcelink.json
+/workspaces/CSharp_Interview_Questions/Constructors/obj/Debug/net10.0/Constructors.dll
+/workspaces/CSharp_Interview_Questions/Constructors/obj/Debug/net10.0/refint/Constructors.dll
+/workspaces/CSharp_Interview_Questions/Constructors/obj/Debug/net10.0/Constructors.pdb
+/workspaces/CSharp_Interview_Questions/Constructors/obj/Debug/net10.0/Constructors.genruntimeconfig.cache
+/workspaces/CSharp_Interview_Questions/Constructors/obj/Debug/net10.0/ref/Constructors.dll
