@@ -5,6 +5,7 @@
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <StartupObject>ContructorProjects3.StaticConstructor</StartupObject>
   </PropertyGroup>
 
 </Project>
