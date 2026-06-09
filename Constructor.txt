@@ -26,3 +26,37 @@ Test test = new Test();
 •	Implicitly defined constructor are public
 •	We can also define a constructor under the class, and if we define it, we can call it as explicit constructor, and explicit constructor can be parameter less or parameterized
 •	<modifier> name (parameter list) { Statements }
+•	If the constructor is not available, we couldn’t create a instance
+Types of Constructors:
+1.	Default / Parameter less Constructor
+2.	Parameterized Constructor
+3.	Copy Constructor
+4.	Static Constructor
+
+•	Default / Parameter less Constructor – if the constructor method doesn’t take any parameters, then we call that as Default / Parameter less. These Constructors can be defined by programmer explicitly or else will be defined implicitly by compiler if there is no explicit constructor under the class.
+•	Implicit constructors are always public and parameter less and default
+•	Parametrized Constructor – if a constructor method is defined with any parameter, then we call that as Parameterized Constructors. These constructors can be defined by the programmers only, but never can be defined implicitly.
+•	Copy Constructors – if we want to create multiple instances with the same value, then we use this Copy Constructors, in a copy constructor the constructor takes the same class as a parameter to it.	
+•	Static Constructors – if a constructor is explicitly defined with static modifier, we call that as static constructor, all the constructors we have defined till now are non-static or instance constructors.
+
+class Test
+{
+     static Test()  //static constructor defined explicitly
+     {
+     }
+     //after compilation this Test class will have a implicit default constructor
+     public Test() //implicit default constructor
+     {
+     }
+}
+•	Static constructors are not going to be defined implicitly, yes, they will be defined implicitly but one condition that is if the class contain static variable, then only implicit static constructors come into picture otherwise if we want, we have to define that.
+•	Static constructors are responsible in initializing static variables and these constructors are never called explicitly they are implicitly called and more over these constructors are first to execute under any class.
+•	Static Constructors cannot be parametrized, so overloading static constructors is not possible.
+•	Why it is not parameterized, because these are called implicitly, we don’t have a chance to pass a value and also the static constructors is a first block to execute, if this is the first block to execute there is no chance to pass a value.
+
+•	Summary: Default or Parameter less constructor means a constructor without any parameters is a default is parameter less; programmers can define them explicitly or else will be defined implicitly provided,
+a constructor with parameter is called parameterized constructors, this can be only defined by programmers, cannot be defined implicitly
+copy constructors, this is also parametrized constructor but generally we use for initializing another instance of the class with the same value is matching with the existing instance
+finally static constructors, these are explicitly defined and there is a chance for implicit also provided your class contain any static variable, if no static variable then no implicit static constructor, but you can define that explicitly using the static modifier, these constructors cannot be parameterized, cannot be overloaded, these are implicitly called, and these are first to execute under your class
+
+
