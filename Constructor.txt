@@ -66,4 +66,16 @@ What is the need of defining a constructor explicitly again as every class has i
 •	If we define constructors explicitly with parameters (parameterized constructors are only defined explicit only we don’t have an implicit parameterized constructor, all implicit constructors are parameter less), then we will get a chance of initializing the fields or variables of the class with new value every time we are going to create instance of the class.
 refer the code in VS to understand the below image
  <image>
+Static Constructors Vs Non-Static Constructors:
+•	If a constructor is explicitly declared by using a static modifier, we call that constructor as static constructors where as rest of other are non-static constructors only.
+•	Constructors are responsible for initializing the fields or variables of a class, static fields are initialized by static constructors where as non-static fields are initialized by non-static constructors
+•	Static constructors are implicitly called where as non-static constructors are must be explicitly called.
+•	Static constructors execute immediately once the execution of a class starts and move over it is the first block of the code to run under the class where as non-static constructors execute only after creating instance of the class as well as each and every time the instance of the class is created.
+•	The moment you start the execution and end of the execution is called life cycle
+•	in the life cycle of the class static constructors execute only one time where as non-static constructors for 0 times if no instance is created and ‘n’ times if n instance are created
+•	Non-static constructors can be parameterized but static constructors cannot have any parameters because static constructors are implicitly called and move over it is the first block of the code to run under the class because of this from where can we send the values.
+•	Non-static constructors can be over loaded whereas static constructors cannot be overloaded.
+•	Every class contain an implicit constructor if not defined explicitly and those implicit constructors are defined based on the following criteria
+1. Every class except a static class contains an implicit non-static constructor if not defined with any explicit constructors 
+2. Static constructors are implicitly defined only if the class contain any static fields or else the constructor will not present at all.
 
