@@ -1,0 +1,11 @@
+Dependency Injection:
+•	DI is a software Design Pattern that allows us to develop loosely coupled application.
+ 
+•	As per image, the loose coupling application we have 6 modules, if we are doing any change in module 1, the module 2 needs not to be tested. Actually, they are using each and they are not dependent on each other
+•	DI, this is the process in which we are injecting the objects of a class into another class that depends on that object.
+
+Without DI	With DI
+Controller creates new MathStudentService()	Controller receives IStudentService through constructor
+Tightly coupled to a concrete class	Depends on an abstraction (IStudentService)
+Changing implementations requires modifying each consumer	Switching implementations typically requires only changing the DI registration
+Harder to test and maintain	Easier to test, maintain, and extend
