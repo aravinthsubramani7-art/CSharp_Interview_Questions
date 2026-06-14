@@ -1,0 +1,14 @@
+•	Dependency Injection is a Design Pattern where objects get the dependencies from some external sources. Instead of creating those dependencies in their classes, they will get it from some other place.
+•	Dependency Injection has 2 words, 
+Dependency – one object has a dependency on some other services
+Injection – we are injecting that dependency from outside
+•	There are 3 main key players in this dependency injection concept.
+Service, Client and dependency injection container
+
+Injection Types:
+•	We have 3 injection types
+1. Constructor Injection
+2. Property Injection – property means getter and setter, sometimes we call it as setter injection
+3. Method Injection – directly using a dependency only in one method.
+ 
+•	Constructor Injection is the preferred approach because required dependencies are supplied when the object is created, so the object cannot exist in an invalid state. Property Injection is used only when a dependency is optional or needs to be assigned after the object has been created. In ASP.NET Core applications, constructor injection is the standard and recommended pattern for most services and controllers.
