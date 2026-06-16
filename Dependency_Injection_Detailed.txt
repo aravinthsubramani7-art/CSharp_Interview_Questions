@@ -12,3 +12,39 @@ Injection Types:
 3. Method Injection – directly using a dependency only in one method.
  
 •	Constructor Injection is the preferred approach because required dependencies are supplied when the object is created, so the object cannot exist in an invalid state. Property Injection is used only when a dependency is optional or needs to be assigned after the object has been created. In ASP.NET Core applications, constructor injection is the standard and recommended pattern for most services and controllers.
+Register Dependencies in the Program.cs
+•	In the program.cs you are registering the services like below
+builder.Services<IFoodService, FoodService>();
+•	If you right click on Services it will bring you to the metadata, if you notice the metadata, you can see the Services is type of IServiceCollection, again if you go to definition of IServiceCollection, you can see the IServiceCollection is implemented by the ServiceCollection
+public class ServiceCollection : IServiceCollection
+ <image>
+•	In this service collection method, we have some more extension methods, using those extension methods we can register our service descriptor. We can use the service descriptor directly. But first the simplest way is to use extension methods
+•	This IServiceCollection gives you 3 extension methods for DI 
+1. Singleton
+2. Scoped
+3. Transient
+•	These above methods define the service lifetime of your object
+Singleton:
+•	Will the dependency injection container create the instance during the startup of the project or will create after some time? Answer – whenever you will hit that class for the first time the instance will be created
+<image>
+see as per project in vs code you will see the same guid is returned in both endpoints since it is registered as Singleton 
+•	But if you stop and run the application again you will receive the different guid, so every time you restarted the application, your service instance and everything destroyed and while running again the new instance is created. Means with the singleton service from start and end of the application we are reusing the same object.
+Scoped:
+•	This is the method we are using most of the time
+•	AddScoped will be used per HTTP request
+•	HTTP lifetime – requesting the server and giving the result, once the request completed because it is scoped the dependency injection container will dispose the instance. And if you again request the endpoint the dependency container will create a new instance
+•	Screenshots attached, every time you execute the endpoint it will create a new guid because the service is registered as Scoped
+ <image>
+ <image>
+First and second screenshot has 2 different guid
+•	One Request – One instance - scoped
+•	All request – one instance – singleton
+
+Transient:
+•	This transient has lowest life time compared to others
+•	The instance is newly created for every use of the service class within the HTTP request.
+means 
+IFoodService foodService1, IFoodService foodService2 – both will give same guid and reuse the same object on scoped method
+but on the transient method it will create 2 different guid since it will create 2 different instance
+ <image>
+see same request but different guides	
