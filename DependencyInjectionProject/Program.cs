@@ -11,6 +11,12 @@ builder.Services.AddSwaggerGen();
 // Add services to the container.
 builder.Services.AddScoped<IEmailService, EmailService>();
 builder.Services.AddScoped<IGiftService, GiftService>();
+//Singleton
+//builder.Services.AddSingleton<IFoodService, FoodService>();
+//Scoped
+// builder.Services.AddScoped<IFoodService, FoodService>();
+//Transient
+builder.Services.AddTransient<IFoodService, FoodService>();
 
 var app = builder.Build();
 
