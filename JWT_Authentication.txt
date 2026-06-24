@@ -1,0 +1,25 @@
+JWT Authorization with Example Project:
+•	JWT Authorization involves creating a token that clients can use to verify their identity
+•	This is the command to run in the vs code to install JWT authentication bearer - dotnet add package Microsoft.AspNetCore.Authentication.JwtBearer
+•	In appsettings.json we will configure JWTConfig, it contains
+1. Issuer – which identify who created (API) and signed the token and allowing the recipient to verify its Authenticity & integrity, we can use the application URL here as a value
+2. Audience – which ensures Who should use this token?  the token is sent to correct Recipients, just use the same URL here 
+3. Key – provide a strong secrete key used to generate the token signature
+ <Image>
+This is how we can create our own Secrete key by using the Windows Powershell	
+4. TokenValidityMins – set the token validity in minutes
+•	Next, we need to add the necessary dependency services in Program.cs
+Explanation of JWT Configuration in the Project
+•	Without JWT:
+Login → Server checks user
+Every request → Server checks session [Server is Stateful], Server must remember every logged-in user.
+•	With JWT:
+Login → Server gives Token
+Client stores Token
+Every request → Client sends Token
+Server validates Token
+Server doesn't need to remember users.
+JWT = proof that the user already logged in.
+•	appsettings.json – JWT Settings file
+•	JWT Authentication is a stateless authentication mechanism where the server generates a signed token after successful login. The client sends this token with every request, and the middleware validates the token's issuer, audience, expiry, and signature before allowing access to protected resources.
+•	AddSecurityDefinition tells Swagger that the API uses JWT Bearer Authentication and that the token should be sent in the Authorization header. AddSecurityRequirement tells Swagger to apply that authentication scheme to API requests, enabling the Authorize button and automatically sending the JWT token with protected endpoint requests.
