@@ -1,0 +1,34 @@
+Manually validates the JWT:
+•	We are going to learning/demo endpoint where we manually validate the JWT and then intentionally edits parts of the token to demonstrate different failures.
+•	I added a separate controller action so AccountController normal JWT authentication continues to work.
+•	"Tampered" in Tamil can be translated as "சிதைத்தல்", "தடையிட்டுக் கெடுத்தல்"
+•	Run the JWTAuthentication Project in VS, to debug and see how it is validating
+•	Experiment 1: without running login endpoint, you can’t get the token, directly run manual-validate endpoint 
+Result: Missing Authorization Header
+•	Experiment 2: I generated the token 30 mins ago and proceed to run the manual-validate endpoint on debugging the code you can view the token in JWT Decode in view and get the exp value and paste it in the URL, Unix Time Stamp - Epoch Converter it will give you the expiry date and time and since token expired already, you will see the following exception thrown
+ 
+•	Experiment 3: generate a new token and paste the token in notepad and edit the header part of the token
+token - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQXJhdmludGgiLCJuYmYiOjE3ODIzNTEwNzksImV4cCI6MTc4MjM1Mjg3OSwiaWF0IjoxNzgyMzUxMDc5LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjUwNDQiLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjUwNDQifQ.Lt0vHDcYbK7EBmXn4L2AJxjWst5znuphInyC_te2KHc
+the yellow one is a Header of the token, sky blue is a payload, green is a signature,
+Now I edited the header of the token and use that in the Swagger, this is called tampering the token
+ 
+ 
+ 
+
+•	Experiment 4: as same as above i am entering some character in between of the payload of the token
+ 
+Signature is a combination of header and payload and security key
+ 
+•	Experiment 5: now I am going to tamper the signature section of the token
+ 
+it decodes all, but we think the signature should be empty because we tampered only the signature section of the token, even though the signature is not a valid it will be validated in the in-build method
+ 
+•	Experiment 6: now I completely remove the signature of the token
+since the signature not available the server unable to decode the token
+ 
+ 
+•	Experiment 7: now I completely remove payload in the token and only send the header and signature
+due the payload not available server unable to decode the token
+ 
+ 
+the same behaviour and exception will be thrown for removing the header and only sends payload and signature
